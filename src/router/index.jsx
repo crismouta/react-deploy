@@ -1,16 +1,17 @@
-import About from "../components/About";
-import { createHashRouter } from 'react-router-dom';
-import Contact from "../components/Contact";
 
-export const router = createHashRouter([
+import { createBrowserRouter } from 'react-router-dom';
+import Home from "../components/Home";
+import About from '../components/About';
+
+
+
+export const router = createBrowserRouter([
     {
         path: "/",
-        element: <About />,
-        
+        element: <Home />,
     },
     {
-        path: "/contact",
-        element: <Contact />,
-        
+        path: "/about",
+        element: <About />,
     }
 ]);
